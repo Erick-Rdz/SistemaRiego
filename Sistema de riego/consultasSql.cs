@@ -8,9 +8,10 @@ using System.Threading.Tasks;
 
 namespace Sistema_de_riego
 {
-    public class mostrarTrabajadores
+    public class consultasSql
     {
         conexion cn = new conexion();
+
         public DataTable MostrarTrabajadores()
         {
             SqlDataAdapter da = new SqlDataAdapter("SP_MostrarTrabajadores", cn.LeerCadena());
@@ -20,6 +21,23 @@ namespace Sistema_de_riego
             da.Fill(dt);
             return dt;
 
+        }
+
+        public Boolean IniciarSesion(String usuario,String password)
+        {
+            SqlCommand cmd = new SqlCommand("SELECT NombreUsuario, Password FROM Administrador WHERE NombreUsuario='" + usuario + "' AND password='" + password + "'", cn.LeerCadena());
+
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+            return false; 
         }
     }
 }

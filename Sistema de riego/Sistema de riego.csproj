@@ -48,7 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="conexion.cs" />
-    <Compile Include="mostrarTrabajadores.cs" />
+    <Compile Include="consultasSql.cs" />
     <Compile Include="Proveedores.cs">
       <SubType>Form</SubType>
     </Compile>

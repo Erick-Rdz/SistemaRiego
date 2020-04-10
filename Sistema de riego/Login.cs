@@ -33,9 +33,23 @@ namespace Sistema_de_riego
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {    
-            Trabajadores tr = new Trabajadores();
-            tr.Show();
+        {
+
+            consultasSql consulta = new consultasSql();
+
+            Boolean res = consulta.IniciarSesion(tbUsuario.Text, tbPassword.Text);
+
+            if (res == true)
+            {
+                Trabajadores tr = new Trabajadores();
+                tr.Show();
+            }
+            else
+            {
+                MessageBox.Show("ERROR AL INICIAR SESION");
+            }
+
+            
             
         }
     }

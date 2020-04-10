@@ -19,7 +19,7 @@ namespace Sistema_de_riego
             InitializeComponent();
         }
 
-        mostrarTrabajadores cli = new mostrarTrabajadores();
+        consultasSql cli = new consultasSql();
 
 
         private void Trabajadores_Load(object sender, EventArgs e)
