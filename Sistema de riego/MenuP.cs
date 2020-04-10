@@ -33,5 +33,40 @@ namespace Sistema_de_riego
         {
 
         }
+
+        private void Label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label8_Click(object sender, EventArgs e)
+        {
+            //this.Hide();
+
+            Trabajadores tr = new Trabajadores();
+            tr.Show();
+            tr.AutoSize = false;
+            tr.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+
+        }
+
+        private void Label6_Click(object sender, EventArgs e)
+        {
+            Riegos r = new Riegos();
+            r.Show();
+
+        }
+
+        private void Label7_Click(object sender, EventArgs e)
+        {
+            Hectareas h = new Hectareas();
+            h.Show();
+        }
+
+        private void Label4_Click(object sender, EventArgs e)
+        {
+            Inventario i = new Inventario();
+            i.Show();
+        }
     }
 }

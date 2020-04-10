@@ -39,5 +39,37 @@ namespace Sistema_de_riego
 
             return false; 
         }
+        public DataTable MostrarRiegos()
+        {
+            SqlDataAdapter da = new SqlDataAdapter("SP_MostrarRiegos", cn.LeerCadena());
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+
+        }
+
+        
+        public DataTable MostrarHectareas()        {
+            SqlDataAdapter da = new SqlDataAdapter("SP_MostrarHectareas", cn.LeerCadena());
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+
+        }
+
+        public DataTable MostrarInventario()
+        {
+            SqlDataAdapter mi = new SqlDataAdapter("SP_MostrarInventario", cn.LeerCadena());
+            mi.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+            DataTable im = new DataTable();
+            mi.Fill(im);
+            return im;
+
+        }
     }
 }

@@ -10,17 +10,18 @@ using System.Windows.Forms;
 
 namespace Sistema_de_riego
 {
-    public partial class Inventario : Form
+    public partial class Hectareas : Form
     {
         consultasSql cli = new consultasSql();
-        public Inventario()
+
+        public Hectareas()
         {
             InitializeComponent();
         }
 
-        private void Inventario_Load(object sender, EventArgs e)
+        private void Hectareas_Load(object sender, EventArgs e)
         {
-            dgvInventario.DataSource = cli.MostrarInventario();
+            dgvHectareas.DataSource = cli.MostrarHectareas();
         }
     }
 }

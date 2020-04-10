@@ -32,3 +32,5 @@ C:\Users\erick\OneDrive\Escritorio\SISTEMA RIEGO\Sistema de riego\obj\Debug\Sist
 C:\Users\erick\OneDrive\Escritorio\SISTEMA RIEGO\Sistema de riego\obj\Debug\Sistema de riego.csproj.CoreCompileInputs.cache
 C:\Users\erick\OneDrive\Escritorio\SISTEMA RIEGO\Sistema de riego\obj\Debug\Sistema de riego.exe
 C:\Users\erick\OneDrive\Escritorio\SISTEMA RIEGO\Sistema de riego\obj\Debug\Sistema de riego.pdb
+C:\Users\erick\OneDrive\Escritorio\SISTEMA RIEGO\Sistema de riego\obj\Debug\Sistema_de_riego.Riegos.resources
+C:\Users\erick\OneDrive\Escritorio\SISTEMA RIEGO\Sistema de riego\obj\Debug\Sistema_de_riego.Hectareas.resources

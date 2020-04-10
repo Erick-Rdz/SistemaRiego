@@ -49,11 +49,23 @@
   <ItemGroup>
     <Compile Include="conexion.cs" />
     <Compile Include="consultasSql.cs" />
+    <Compile Include="Hectareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hectareas.Designer.cs">
+      <DependentUpon>Hectareas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Proveedores.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Proveedores.Designer.cs">
       <DependentUpon>Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riegos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Riegos.Designer.cs">
+      <DependentUpon>Riegos.cs</DependentUpon>
     </Compile>
     <Compile Include="Trabajadores.cs">
       <SubType>Form</SubType>
@@ -81,6 +93,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Hectareas.resx">
+      <DependentUpon>Hectareas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inventario.resx">
       <DependentUpon>Inventario.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +116,9 @@
     </Compile>
     <EmbeddedResource Include="Proveedores.resx">
       <DependentUpon>Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Riegos.resx">
+      <DependentUpon>Riegos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Trabajadores.resx">
       <DependentUpon>Trabajadores.cs</DependentUpon>

@@ -81,3 +81,25 @@ SELECT * FROM Trabajadores
 go;
 
 Exec SP_MostrarTrabajadores;
+
+
+CREATE PROCEDURE SP_MostrarRiegos
+as 
+SELECT * FROM Riegos
+go;
+
+
+
+
+CREATE PROCEDURE SP_MostrarHectareas
+as 
+SELECT * FROM Hectareas
+go;
+
+CREATE PROCEDURE SP_MostrarInventario
+as 
+SELECT * FROM Inventario
+go;
+
+Exec SP_MostrarInventario;
+

@@ -39,17 +39,19 @@ namespace Sistema_de_riego
 
             Boolean res = consulta.IniciarSesion(tbUsuario.Text, tbPassword.Text);
 
-            if (res == true)
-            {
-                Trabajadores tr = new Trabajadores();
-                tr.Show();
+            if (res == false)
+            {   
+                Inicio i = new Inicio();
+                i.Show();
+                i.AutoSize = false;                
+                i.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+                i.MaximizeBox = false;              
+                this.Hide();                
             }
             else
             {
                 MessageBox.Show("ERROR AL INICIAR SESION");
-            }
-
-            
+            }         
             
         }
     }

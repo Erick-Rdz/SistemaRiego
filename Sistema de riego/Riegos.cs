@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace Sistema_de_riego
 {
-    public partial class Inventario : Form
+    public partial class Riegos : Form
     {
         consultasSql cli = new consultasSql();
-        public Inventario()
+        public Riegos()
         {
             InitializeComponent();
         }
 
-        private void Inventario_Load(object sender, EventArgs e)
+        private void Riegos_Load(object sender, EventArgs e)
         {
-            dgvInventario.DataSource = cli.MostrarInventario();
+            dgvRiegos.DataSource = cli.MostrarRiegos();
         }
     }
 }

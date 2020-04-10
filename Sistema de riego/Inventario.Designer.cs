@@ -29,7 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inventario));
+            this.dgvInventario = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dgvInventario
+            // 
+            this.dgvInventario.AllowUserToAddRows = false;
+            this.dgvInventario.AllowUserToDeleteRows = false;
+            this.dgvInventario.AllowUserToOrderColumns = true;
+            this.dgvInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvInventario.Location = new System.Drawing.Point(228, 65);
+            this.dgvInventario.Name = "dgvInventario";
+            this.dgvInventario.ReadOnly = true;
+            this.dgvInventario.Size = new System.Drawing.Size(476, 315);
+            this.dgvInventario.TabIndex = 0;
             // 
             // Inventario
             // 
@@ -37,13 +51,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(716, 436);
+            this.Controls.Add(this.dgvInventario);
             this.Name = "Inventario";
             this.Text = "Inventario";
             this.Load += new System.EventHandler(this.Inventario_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dgvInventario;
     }
 }

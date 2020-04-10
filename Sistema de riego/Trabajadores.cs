@@ -24,7 +24,15 @@ namespace Sistema_de_riego
 
         private void Trabajadores_Load(object sender, EventArgs e)
         {
+
             dgvTrabajadores.DataSource = cli.MostrarTrabajadores();
+            int a = dgvTrabajadores.Rows.Count;
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

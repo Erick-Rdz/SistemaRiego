@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Trabajadores));
             this.dgvTrabajadores = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTrabajadores)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,23 +45,36 @@
             this.dgvTrabajadores.Size = new System.Drawing.Size(550, 361);
             this.dgvTrabajadores.TabIndex = 0;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(207, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Trabajadores";
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
+            // 
             // Trabajadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(803, 472);
+            this.ClientSize = new System.Drawing.Size(782, 497);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvTrabajadores);
             this.Name = "Trabajadores";
             this.Text = "Trabajadores";
             this.Load += new System.EventHandler(this.Trabajadores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTrabajadores)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.DataGridView dgvTrabajadores;
+        private System.Windows.Forms.Label label1;
     }
 }
