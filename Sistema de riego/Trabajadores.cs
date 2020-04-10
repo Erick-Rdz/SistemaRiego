@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,16 @@ namespace Sistema_de_riego
     {
         public Trabajadores()
         {
+          
             InitializeComponent();
+        }
+
+        mostrarTrabajadores cli = new mostrarTrabajadores();
+
+
+        private void Trabajadores_Load(object sender, EventArgs e)
+        {
+            dgvTrabajadores.DataSource = cli.MostrarTrabajadores();
         }
     }
 }

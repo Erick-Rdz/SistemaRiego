@@ -33,6 +33,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.lblAdmin = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label5
@@ -75,16 +76,27 @@
             this.label9.TabIndex = 8;
             this.label9.Text = "Inicio";
             // 
+            // lblAdmin
+            // 
+            this.lblAdmin.AutoSize = true;
+            this.lblAdmin.Location = new System.Drawing.Point(76, 43);
+            this.lblAdmin.Name = "lblAdmin";
+            this.lblAdmin.Size = new System.Drawing.Size(35, 13);
+            this.lblAdmin.TabIndex = 10;
+            this.lblAdmin.Text = "label6";
+            // 
             // Inicio
             // 
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(716, 436);
+            this.Controls.Add(this.lblAdmin);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Name = "Inicio";
             this.Text = "Inicio";
+            this.Load += new System.EventHandler(this.Inicio_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,6 +116,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblAdmin;
     }
 }
 

@@ -33,8 +33,10 @@ namespace Sistema_de_riego
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-
+        {    
+            Trabajadores tr = new Trabajadores();
+            tr.Show();
+            
         }
     }
 }

@@ -15,6 +15,8 @@ namespace Sistema_de_riego
         public Inicio()
         {
             InitializeComponent();
+
+ 
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -23,6 +25,11 @@ namespace Sistema_de_riego
         }
 
         private void lbl_ventas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Inicio_Load(object sender, EventArgs e)
         {
 
         }
