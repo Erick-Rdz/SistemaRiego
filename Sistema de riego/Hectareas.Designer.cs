@@ -61,44 +61,44 @@
             // 
             // cantcos_txt
             // 
-            this.cantcos_txt.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cantcos_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cantcos_txt.Location = new System.Drawing.Point(27, 337);
             this.cantcos_txt.Name = "cantcos_txt";
-            this.cantcos_txt.Size = new System.Drawing.Size(141, 25);
+            this.cantcos_txt.Size = new System.Drawing.Size(141, 22);
             this.cantcos_txt.TabIndex = 22;
             // 
             // cantarbo_txt
             // 
-            this.cantarbo_txt.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cantarbo_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cantarbo_txt.Location = new System.Drawing.Point(27, 267);
             this.cantarbo_txt.Name = "cantarbo_txt";
-            this.cantarbo_txt.Size = new System.Drawing.Size(141, 25);
+            this.cantarbo_txt.Size = new System.Drawing.Size(141, 22);
             this.cantarbo_txt.TabIndex = 21;
             // 
             // tipocult_txt
             // 
-            this.tipocult_txt.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tipocult_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tipocult_txt.Location = new System.Drawing.Point(27, 186);
             this.tipocult_txt.Name = "tipocult_txt";
-            this.tipocult_txt.Size = new System.Drawing.Size(141, 25);
+            this.tipocult_txt.Size = new System.Drawing.Size(141, 22);
             this.tipocult_txt.TabIndex = 20;
             // 
             // numhect_txt
             // 
-            this.numhect_txt.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numhect_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numhect_txt.Location = new System.Drawing.Point(27, 113);
             this.numhect_txt.Name = "numhect_txt";
-            this.numhect_txt.Size = new System.Drawing.Size(141, 25);
+            this.numhect_txt.Size = new System.Drawing.Size(141, 22);
             this.numhect_txt.TabIndex = 19;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Silver;
-            this.label5.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(24, 302);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(146, 18);
+            this.label5.Size = new System.Drawing.Size(159, 16);
             this.label5.TabIndex = 18;
             this.label5.Text = "Cantidad de cosecha:";
             // 
@@ -106,10 +106,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Silver;
-            this.label4.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(24, 227);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(141, 18);
+            this.label4.Size = new System.Drawing.Size(153, 16);
             this.label4.TabIndex = 17;
             this.label4.Text = "Cantidad de arboles:";
             // 
@@ -117,10 +117,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Silver;
-            this.label3.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(24, 154);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 18);
+            this.label3.Size = new System.Drawing.Size(115, 16);
             this.label3.TabIndex = 16;
             this.label3.Text = "Tipo de cultivo:";
             // 
@@ -128,17 +128,17 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Silver;
-            this.label2.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(24, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 18);
+            this.label2.Size = new System.Drawing.Size(153, 16);
             this.label2.TabIndex = 15;
             this.label2.Text = "Numero de hectarea:";
             // 
             // insert_btn
             // 
             this.insert_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.insert_btn.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.insert_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.insert_btn.Location = new System.Drawing.Point(478, 400);
             this.insert_btn.Name = "insert_btn";
             this.insert_btn.Size = new System.Drawing.Size(91, 24);
@@ -149,18 +149,19 @@
             // delete_btn
             // 
             this.delete_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.delete_btn.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delete_btn.Location = new System.Drawing.Point(347, 401);
             this.delete_btn.Name = "delete_btn";
             this.delete_btn.Size = new System.Drawing.Size(95, 24);
             this.delete_btn.TabIndex = 25;
             this.delete_btn.Text = "ELIMINAR";
             this.delete_btn.UseVisualStyleBackColor = false;
+            this.delete_btn.Click += new System.EventHandler(this.Delete_btn_Click);
             // 
             // update_btn
             // 
             this.update_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.update_btn.Font = new System.Drawing.Font("Open Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.update_btn.Location = new System.Drawing.Point(227, 399);
             this.update_btn.Name = "update_btn";
             this.update_btn.Size = new System.Drawing.Size(89, 26);
@@ -172,19 +173,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(214, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 18);
+            this.label1.Size = new System.Drawing.Size(60, 16);
             this.label1.TabIndex = 28;
             this.label1.Text = "Buscar:";
             // 
             // buscar_txt
             // 
-            this.buscar_txt.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buscar_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buscar_txt.Location = new System.Drawing.Point(277, 52);
             this.buscar_txt.Name = "buscar_txt";
-            this.buscar_txt.Size = new System.Drawing.Size(413, 25);
+            this.buscar_txt.Size = new System.Drawing.Size(413, 22);
             this.buscar_txt.TabIndex = 29;
             this.buscar_txt.KeyUp += new System.Windows.Forms.KeyEventHandler(this.buscar_txt_KeyUp);
             // 

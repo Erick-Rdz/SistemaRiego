@@ -13,7 +13,6 @@ namespace Sistema_de_riego
 {
     public partial class Trabajadores : Form
     {
-        conexion cn = new conexion();
         public Trabajadores()
         {
           
@@ -28,6 +27,16 @@ namespace Sistema_de_riego
 
             dgvTrabajadores.DataSource = cli.MostrarTrabajadores();
             dgvTrabajadores.Columns["id"].Visible = false;
+            dgvTrabajadores.RowHeadersVisible = false;
+            foreach (DataGridViewColumn c in dgvTrabajadores.Columns)
+            {
+                c.SortMode = DataGridViewColumnSortMode.NotSortable;
+                c.Selected = false;
+            }
+
+            dgvTrabajadores.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvTrabajadores.ClearSelection();
+            dgvTrabajadores.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
             int a = dgvTrabajadores.Rows.Count;
 
         }
@@ -37,10 +46,32 @@ namespace Sistema_de_riego
 
         }
 
-        private void pruebainsert_btn_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             cli.insertarTrabajador();
             dgvTrabajadores.DataSource = cli.MostrarTrabajadores();
+            
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            if (dgvTrabajadores.CurrentRow.Cells != null)
+            {
+                int a = dgvTrabajadores.CurrentRow.Index;
+
+                String id = dgvTrabajadores.CurrentRow.Cells[0].Value.ToString();
+                String nombre = dgvTrabajadores.CurrentRow.Cells[1].Value.ToString();
+                String apellido = dgvTrabajadores.CurrentRow.Cells[2].Value.ToString();
+
+                MessageBox.Show("PRUEBA" + id + " "+nombre+" "+ apellido);
+                dgvTrabajadores.ClearSelection();
+            }
+            else
+            {
+                MessageBox.Show("NO SELECCIONADAS");
+
+            }
+           //int i = dgvTrabajadores.CurrentRow.Index;
         }
     }
 }

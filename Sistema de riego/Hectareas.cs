@@ -23,12 +23,23 @@ namespace Sistema_de_riego
 
         private void Hectareas_Load(object sender, EventArgs e)
         {
-            dgvHectareas.DataSource = cli.MostrarHectareas();
-            dgvHectareas.Columns["Num_Hect"].Visible = false;
-            int a = dgvHectareas.Rows.Count;
+            dgvHectareas.DataSource = cli.MostrarHectareas();  //LLENAMOS DE DATOS EL DATA SOURCE
+            dgvHectareas.Columns["Num_Hect"].Visible = false;   //OCULTAMOS LA COLUMNA ID PORQUE NO DEBEMOS MOSTRARLA
+            dgvHectareas.RowHeadersVisible = false;             //OCULTAMOS EL INDICE DEL DATA SOURCE
+
+            foreach (DataGridViewColumn c in dgvHectareas.Columns) //CICLO PARA NO PERMITIR QUE SE ORDENEN LAS COLUMNAS YA QUE LUEGO FALLA
+            {
+                c.SortMode = DataGridViewColumnSortMode.NotSortable;
+                c.Selected = false;
+            }
+
+            dgvHectareas.SelectionMode = DataGridViewSelectionMode.FullRowSelect; //METODO QUE HACE QUE SE SELECCIONE TODA LA FILA
+            dgvHectareas.ClearSelection();                      //QUITAMOS LA SELECCION DE ALGUN REGISTRO
+
+            //int a = dgvHectareas.Rows.Count;   //METODO PARA CONTAR LAS FILAS ACTUALES EN EL DATASOURCE
         }
 
-        private void dgvHectareas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvHectareas_CellContentClick(object sender, DataGridViewCellEventArgs e) //METODO PARA CARGAR LOS DATOS EN LA PARTE IZQUIERDA
         {
             try
             {
@@ -46,7 +57,7 @@ namespace Sistema_de_riego
 
         }
 
-        private void update_btn_Click(object sender, EventArgs e)
+        private void update_btn_Click(object sender, EventArgs e)  //METODO PARA ACTUALIZAR EN LA BASE DE DATOS LOS REGISTROS
         {
 
             SqlCommand cmd = new SqlCommand("UPDATE HECTAREAS SET Tipo_Cultivo = @tipocultivo, Cant_Arboles = @cantarboles, cant_Cosecha = @cantcosecha WHERE Num_Hect = @numhect", cn.LeerCadena());
@@ -76,6 +87,27 @@ namespace Sistema_de_riego
             SqlCommand cmd = new SqlCommand("SELECT * FROM Hectareas WHERE Hectareas LIKE ('" + buscar_txt.Text + "%')", cn.LeerCadena());
             SqlDataReader dr = cmd.ExecuteReader();
             dgvHectareas.DataSource = cli.MostrarHectareas();*/
+        }
+
+        private void Delete_btn_Click(object sender, EventArgs e)  //METODO PARA ELIMINAR REGISTRO
+        {
+
+            if (dgvHectareas.CurrentRow.Cells != null)
+            {
+                if (MessageBox.Show("¿Desea Eliminar el registro?", "Confirmar Accion", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+
+                    String id = dgvHectareas.CurrentRow.Cells[0].Value.ToString(); //OBTENEMOS EL ID DE LA FILA SELECCIONADA 
+
+                    MessageBox.Show("REGISTRO ELIMINADO");
+
+                    cli.eliminarRegistroHectarea(id);  //CONSULTA QUE ELIMINA EL REGISTRO
+                    dgvHectareas.DataSource = cli.MostrarHectareas(); //ACTUALIZO EL DATAGRIDVIEW
+
+
+                }              
+            }
+               
         }
     }
 }

@@ -72,9 +72,15 @@ namespace Sistema_de_riego
 
         }
 
-        public void insertarTrabajador()
+        public void insertarTrabajador() //EJEMPLO DE INSERCION
         {
             SqlCommand cmd = new SqlCommand("INSERT INTO Trabajadores VALUES('ERICK', 'RODRIGUEZ', '1111111', 'calle PRIVADA'); ", cn.LeerCadena());
+            SqlDataReader dr = cmd.ExecuteReader();
+        }
+
+        public void eliminarRegistroHectarea(String id)
+        {
+            SqlCommand cmd = new SqlCommand("DELETE from Hectareas where Num_Hect = '"+ id +"' ;", cn.LeerCadena());
             SqlDataReader dr = cmd.ExecuteReader();
         }
     }

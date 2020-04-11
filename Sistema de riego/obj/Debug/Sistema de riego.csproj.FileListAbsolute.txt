@@ -50,3 +50,19 @@ C:\Users\Kevin\Desktop\SistemaFide\SistemaRiego\SistemaRiego\Sistema de riego\ob
 C:\Users\Kevin\Desktop\SistemaFide\SistemaRiego\SistemaRiego\Sistema de riego\obj\Debug\Sistema de riego.csproj.CoreCompileInputs.cache
 C:\Users\Kevin\Desktop\SistemaFide\SistemaRiego\SistemaRiego\Sistema de riego\obj\Debug\Sistema de riego.exe
 C:\Users\Kevin\Desktop\SistemaFide\SistemaRiego\SistemaRiego\Sistema de riego\obj\Debug\Sistema de riego.pdb
+C:\Users\erick\OneDrive\Escritorio\SistemaRiego\Sistema de riego\bin\Debug\Sistema de riego.exe.config
+C:\Users\erick\OneDrive\Escritorio\SistemaRiego\Sistema de riego\bin\Debug\Sistema de riego.exe
+C:\Users\erick\OneDrive\Escritorio\SistemaRiego\Sistema de riego\bin\Debug\Sistema de riego.pdb
+C:\Users\erick\OneDrive\Escritorio\SistemaRiego\Sistema de riego\obj\Debug\Sistema de riego.csprojAssemblyReference.cache
+C:\Users\erick\OneDrive\Escritorio\SistemaRiego\Sistema de riego\obj\Debug\Sistema_de_riego.Hectareas.resources
+C:\Users\erick\OneDrive\Escritorio\SistemaRiego\Sistema de riego\obj\Debug\Sistema_de_riego.Inventario.resources
+C:\Users\erick\OneDrive\Escritorio\SistemaRiego\Sistema de riego\obj\Debug\Sistema_de_riego.Inicio.resources
+C:\Users\erick\OneDrive\Escritorio\SistemaRiego\Sistema de riego\obj\Debug\Sistema_de_riego.Login.resources
+C:\Users\erick\OneDrive\Escritorio\SistemaRiego\Sistema de riego\obj\Debug\Sistema_de_riego.Properties.Resources.resources
+C:\Users\erick\OneDrive\Escritorio\SistemaRiego\Sistema de riego\obj\Debug\Sistema_de_riego.Proveedores.resources
+C:\Users\erick\OneDrive\Escritorio\SistemaRiego\Sistema de riego\obj\Debug\Sistema_de_riego.Riegos.resources
+C:\Users\erick\OneDrive\Escritorio\SistemaRiego\Sistema de riego\obj\Debug\Sistema_de_riego.Trabajadores.resources
+C:\Users\erick\OneDrive\Escritorio\SistemaRiego\Sistema de riego\obj\Debug\Sistema de riego.csproj.GenerateResource.cache
+C:\Users\erick\OneDrive\Escritorio\SistemaRiego\Sistema de riego\obj\Debug\Sistema de riego.csproj.CoreCompileInputs.cache
+C:\Users\erick\OneDrive\Escritorio\SistemaRiego\Sistema de riego\obj\Debug\Sistema de riego.exe
+C:\Users\erick\OneDrive\Escritorio\SistemaRiego\Sistema de riego\obj\Debug\Sistema de riego.pdb
