@@ -71,5 +71,11 @@ namespace Sistema_de_riego
             return im;
 
         }
+
+        public void insertarTrabajador()
+        {
+            SqlCommand cmd = new SqlCommand("INSERT INTO Trabajadores VALUES('ERICK', 'RODRIGUEZ', '1111111', 'calle PRIVADA'); ", cn.LeerCadena());
+            SqlDataReader dr = cmd.ExecuteReader();
+        }
     }
 }

@@ -13,6 +13,7 @@ namespace Sistema_de_riego
 {
     public partial class Trabajadores : Form
     {
+        conexion cn = new conexion();
         public Trabajadores()
         {
           
@@ -26,6 +27,7 @@ namespace Sistema_de_riego
         {
 
             dgvTrabajadores.DataSource = cli.MostrarTrabajadores();
+            dgvTrabajadores.Columns["id"].Visible = false;
             int a = dgvTrabajadores.Rows.Count;
 
         }
@@ -33,6 +35,12 @@ namespace Sistema_de_riego
         private void Label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pruebainsert_btn_Click(object sender, EventArgs e)
+        {
+            cli.insertarTrabajador();
+            dgvTrabajadores.DataSource = cli.MostrarTrabajadores();
         }
     }
 }
