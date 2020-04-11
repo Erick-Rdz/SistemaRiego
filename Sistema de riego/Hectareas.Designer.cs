@@ -174,16 +174,16 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(214, 52);
+            this.label1.Location = new System.Drawing.Point(214, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 16);
+            this.label1.Size = new System.Drawing.Size(109, 16);
             this.label1.TabIndex = 28;
-            this.label1.Text = "Buscar:";
+            this.label1.Text = "Buscar cultivo:";
             // 
             // buscar_txt
             // 
             this.buscar_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buscar_txt.Location = new System.Drawing.Point(277, 52);
+            this.buscar_txt.Location = new System.Drawing.Point(329, 52);
             this.buscar_txt.Name = "buscar_txt";
             this.buscar_txt.Size = new System.Drawing.Size(413, 22);
             this.buscar_txt.TabIndex = 29;

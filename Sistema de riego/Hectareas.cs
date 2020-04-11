@@ -70,13 +70,12 @@ namespace Sistema_de_riego
             MessageBox.Show("Registro actualizado");
         }
 
-        //Este metodo no le muevan esta en PROCESO
+        //METODO PARA FILTRAR ALGUN CULTIVO DESDE LA CAJA DE TEXTO "Buscar cultivo"
         private void buscar_txt_KeyUp(object sender, KeyEventArgs e)
         {
-            /*
             SqlCommand cmd = cn.LeerCadena().CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "SELECT * FROM Hectareas WHERE Hectareas LIKE ('" + buscar_txt.Text + "%')";
+            cmd.CommandText = "SELECT * FROM Hectareas WHERE Tipo_cultivo LIKE ('" + buscar_txt.Text + "%')";//CONSULTAMOS LA BASE DE DATOS ESPECIFICAMENTE EL CAMPO "Tipo_cultivo" CON LA SIGUIENTE ESTRUCTURA
             cmd.ExecuteNonQuery();
 
             DataTable dt = new DataTable();
@@ -84,9 +83,6 @@ namespace Sistema_de_riego
 
             da.Fill(dt);
             dgvHectareas.DataSource = dt;
-            SqlCommand cmd = new SqlCommand("SELECT * FROM Hectareas WHERE Hectareas LIKE ('" + buscar_txt.Text + "%')", cn.LeerCadena());
-            SqlDataReader dr = cmd.ExecuteReader();
-            dgvHectareas.DataSource = cli.MostrarHectareas();*/
         }
 
         private void Delete_btn_Click(object sender, EventArgs e)  //METODO PARA ELIMINAR REGISTRO
