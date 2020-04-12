@@ -145,6 +145,7 @@
             this.insert_btn.TabIndex = 26;
             this.insert_btn.Text = "INSERT";
             this.insert_btn.UseVisualStyleBackColor = false;
+            this.insert_btn.Click += new System.EventHandler(this.insert_btn_Click);
             // 
             // delete_btn
             // 

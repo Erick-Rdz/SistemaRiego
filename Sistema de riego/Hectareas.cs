@@ -21,6 +21,15 @@ namespace Sistema_de_riego
             InitializeComponent();
         }
 
+        public void limpiar()
+        {
+            numhect_txt.Text = "";
+            tipocult_txt.Text = "";
+            cantarbo_txt.Text = "";
+            cantcos_txt.Text = "";
+        }
+
+
         private void Hectareas_Load(object sender, EventArgs e)
         {
             dgvHectareas.DataSource = cli.MostrarHectareas();  //LLENAMOS DE DATOS EL DATA SOURCE
@@ -67,6 +76,7 @@ namespace Sistema_de_riego
             cmd.Parameters.AddWithValue("@numhect", numhect_txt.Text);
             SqlDataReader dr = cmd.ExecuteReader();
             dgvHectareas.DataSource = cli.MostrarHectareas();
+            limpiar();
             MessageBox.Show("Registro actualizado");
         }
 
@@ -99,11 +109,27 @@ namespace Sistema_de_riego
 
                     cli.eliminarRegistroHectarea(id);  //CONSULTA QUE ELIMINA EL REGISTRO
                     dgvHectareas.DataSource = cli.MostrarHectareas(); //ACTUALIZO EL DATAGRIDVIEW
+                    limpiar();
 
 
                 }              
             }
                
+        }
+
+        //METODO PARA INSERTAR UN CULTIVO NUEVO A LA BASE DE DATOS NO HACE FALTA LLENAR EL CAMPO "ID"
+        private void insert_btn_Click(object sender, EventArgs e)
+        {
+            if(cli.InsertarRegistroHectarea(tipocult_txt.Text, cantarbo_txt.Text, cantcos_txt.Text))
+            {
+                dgvHectareas.DataSource = cli.MostrarHectareas();
+                limpiar();
+                MessageBox.Show("Registro insertado correctamente");
+            }
+            else
+            {
+                MessageBox.Show("Error al insertar registro");
+            }
         }
     }
 }

@@ -83,5 +83,19 @@ namespace Sistema_de_riego
             SqlCommand cmd = new SqlCommand("DELETE from Hectareas where Num_Hect = '"+ id +"' ;", cn.LeerCadena());
             SqlDataReader dr = cmd.ExecuteReader();
         }
+
+        public bool InsertarRegistroHectarea(String tipocultivo, String cantarboles, String cantcosecha)
+        {
+            SqlCommand cmd = new SqlCommand(String.Format("INSERT INTO Hectareas VALUES ('{0}', '{1}', '{2}')", new String[] {tipocultivo, cantarboles, cantcosecha}), cn.LeerCadena());
+            int filasafectadas = cmd.ExecuteNonQuery();
+            if (filasafectadas > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

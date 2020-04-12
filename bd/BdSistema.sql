@@ -19,7 +19,7 @@ INSERT INTO Trabajadores VALUES
 ('Ricardo','Montes','8341596431',' calle Juarez');
 
 CREATE TABLE [Hectareas](
-[Num_Hect][int] not null,
+[Num_Hect][int] IDENTITY(1,1) not null,
 [Tipo_cultivo][nvarchar](100) not null,
 [Cant_Arboles][nvarchar](50) not null,
 [cant_Cosecha][nvarchar](50) not null,
